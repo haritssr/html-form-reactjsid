@@ -5,11 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Basic Form</title>
   </head>
-  <body>
-    <h1>Basic Form</h1>
 
-    <!--  -->
-    <form action="" method="" id="form-[something]" style="user-select: none">
+  <style>
+    label {
+      display: block;
+    }
+  </style>
+
+  <body>
+    <h1>Basic HTML + JS Form</h1>
+    <form action="" method="" id="formNewContact" style="user-select: none">
       <!-- Random Form -->
       <fieldset>
         <legend>Random fieldset</legend>
@@ -36,16 +41,46 @@
         <legend>Contact Name</legend>
         <label for="firstName" style="display: block">
           First Name
-          <input name="firstName" type="text" id="first-name" required />
+          <input
+            name="firstName"
+            type="text"
+            id="first-name"
+            autocomplete="on"
+            placeholder="First Name"
+          />
         </label>
         <label for="lastName">
           Last Name
-          <input name="lastName" type="text" id="last-name" required />
+          <input
+            name="lastName"
+            type="text"
+            id="last-name"
+            placeholder="Last Name"
+            required
+          />
         </label>
+        <div>
+          <label>
+            Test A
+            <input name="testA" type="text" value="Test A" />
+          </label>
+          <label>
+            Test B
+            <input name="testB" type="text" value="Test B" />
+          </label>
+          <label>
+            Test C
+            <input name="testC" type="text" value="Test C" />
+          </label>
+        </div>
       </fieldset>
 
       <!-- Submit -->
       <button type="submit">Submit</button>
+      <!-- another type of submit -->
+      <!-- <input type="submit" value="Submit" /> -->
+      <button type="reset">Reset</button>
     </form>
   </body>
+  <script src="index.js"></script>
 </html>
