@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basic Form</title>
+  </head>
+  <body>
+    <h1>Basic Form</h1>
+
+    <!--  -->
+    <form action="" method="" id="form-[something]" style="user-select: none">
+      <!-- Random Form -->
+      <fieldset>
+        <legend>Random fieldset</legend>
+        <label for="text">
+          <input type="text" id="text" />
+          Simple radio
+        </label>
+        <label for="radio1">
+          <input type="radio" id="radio1" />
+          Simple radio
+        </label>
+        <label for="radio2">
+          <input type="radio" id="radio2" />
+          Simple radio
+        </label>
+        <label for="radio3">
+          <input type="radio" id="radio3" />
+          Simple radio
+        </label>
+      </fieldset>
+
+      <!-- Contact Name -->
+      <fieldset>
+        <legend>Contact Name</legend>
+        <label for="firstName" style="display: block">
+          First Name
+          <input name="firstName" type="text" id="first-name" required />
+        </label>
+        <label for="lastName">
+          Last Name
+          <input name="lastName" type="text" id="last-name" required />
+        </label>
+      </fieldset>
+
+      <!-- Submit -->
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
