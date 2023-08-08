@@ -71,3 +71,7 @@ button:focus-visible {
 label {
   display: block;
 }
+
+form {
+  user-select: none;
+}
